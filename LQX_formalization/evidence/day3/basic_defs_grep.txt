@@ -1,0 +1,24 @@
+=== IsCheckmate ===
+871:def IsCheckmate (pos : Position) : Prop :=
+881:| Checkmate (p : Position) : IsCheckmate p → ForcedWin p.turn.other p
+=== valid_moves ===
+781:def valid_moves_from_src (pos : Position) (src : Coords)
+859:def valid_moves (pos : Position) : List (ChessMove × Position) := Id.run do
+862:    moves := (valid_moves_from_src pos src).append moves
+866:#reduce valid_moves game_start
+867:--#reduce valid_moves pos2
+873:  then valid_moves pos = []
+883:   (m, p1) ∈ valid_moves p → ForcedWin p.turn p1 → ForcedWin p.turn p
+885:   (∀ vm ∈ valid_moves p, ForcedWin p.turn.other vm.snd) → ForcedWin p.turn.other p
+891:  let mvs := valid_moves pos
+901:    IsReachable p → (m, p1) ∈ valid_moves p → IsReachable p1
+=== ForcedWin ===
+880:inductive ForcedWin : Side → Position → Prop where
+=== FIXME ===
+886:   -- FIXME: This is wrong because it considers a stalemate to be a win for the side
+=== check-related ===
+650:def king_is_in_check (pos : Position) (side : Side) : Bool :=
+833:  let result' := result.filter (fun (_,p) ↦ ¬king_is_in_check p side)
+871:def IsCheckmate (pos : Position) : Prop :=
+872:  if king_is_in_check pos pos.turn
+881:| Checkmate (p : Position) : IsCheckmate p → ForcedWin p.turn.other p

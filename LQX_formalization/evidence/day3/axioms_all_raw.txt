@@ -1,0 +1,14 @@
+### Chess/Puzzles/Stalemate.lean
+'cross_check_real_mate' depends on axioms: [propext]
+'false_win_on_stalemate' depends on axioms: [propext]
+'reachable_from_anchor' depends on axioms: [propext]
+'true_win_with_pawn' depends on axioms: [propext]
+'win_via_Re2' depends on axioms: [propext]
+
+### Chess/Puzzles/Lemmas.lean
+'stalemate_no_legal_moves' depends on axioms: [propext]
+'stalemate_not_checkmate' depends on axioms: [propext]
+'mate_no_legal_moves' depends on axioms: [propext]
+'mate_is_checkmate' depends on axioms: [propext]
+'stalemate_ne_checkmate' depends on axioms: [propext]
+'stalemate_vacuous_hypothesis' depends on axioms: [propext]

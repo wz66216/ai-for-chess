@@ -1,0 +1,45 @@
+Chess/Puzzles/LLMTest.lean:31:2: error: It is Side.white's turn to move, try to use the `opponent_move` tactic instead of `move`
+Chess/Puzzles/LLMTest.lean:45:28: error: unsolved goals
+⊢ ForcedWin
+    Side.white
+        ╔════════════════╗
+        ║▓▓░░▓▓░░▓▓░░▓▓♕]║
+        ║♟]▓▓░░▓▓░░▓▓░░▓▓║
+        ║♔}░░♘]░░▓▓░░▓▓░░║
+        ║♖]▓▓░░▓▓░░▓▓░░▓▓║
+        ║▓▓░░▓▓░░▓▓░░▓▓░░║
+        ║♜]▓▓░░▓▓░░▓▓░░▓▓║
+        ║♚]░░▓▓░░▓▓░░▓▓░░║
+        ║░░▓▓░░▓▓░░▓▓░░▓▓║
+        ╚════════════════╝
+
+⊢ ForcedWin
+    Side.white
+        ╔════════════════╗
+        ║▓▓░░▓▓░░▓▓░░▓▓♕]║
+        ║♟]▓▓░░▓▓░░▓▓░░▓▓║
+        ║♔}░░♘]░░▓▓░░▓▓░░║
+        ║♖]▓▓░░▓▓░░▓▓░░▓▓║
+        ║▓▓░░▓▓░░▓▓░░▓▓░░║
+        ║░░♜]░░▓▓░░▓▓░░▓▓║
+        ║▓▓░░▓▓░░▓▓░░▓▓░░║
+        ║░░♚]░░▓▓░░▓▓░░▓▓║
+        ╚════════════════╝
+Chess/Puzzles/LLMTest.lean:54:2: error: It is Side.white's turn to move, try to use the `opponent_move` tactic instead of `move`
+Chess/Puzzles/LLMTest.lean:62:2: error: It is Side.white's turn to move, try to use the `opponent_move` tactic instead of `move`
+Chess/Puzzles/LLMTest.lean:70:2: error: It is Side.white's turn to move, try to use the `opponent_move` tactic instead of `move`
+Chess/Puzzles/LLMTest.lean:85:2: error: failed to make move
+Chess/Puzzles/LLMTest.lean:131:2: error: tactic 'decide' proved that the proposition
+  IsCheckmate
+        ╔════════════════╗
+        ║♜]░░♝]♛]▓▓♜]▓▓░░║
+        ║♟]♟]░░▓▓♞]▓▓░░▓▓║
+        ║▓▓░░▓▓░░♘]░░▓▓♚}║
+        ║░░▓▓░░♟]♙]♟]♟]♙]║
+        ║▓▓♝]▓▓♞]▓▓░░▓▓♕]║
+        ║░░▓▓♘]▓▓░░▓▓░░▓▓║
+        ║♙]♙]▓▓░░▓▓♙]♙]░░║
+        ║♖]▓▓♗]▓▓♔]▓▓░░♖]║
+        ╚════════════════╝
+is false
+Chess/Puzzles/LLMTest.lean:152:4: error: failed to make move

@@ -1,0 +1,6 @@
+'stalemate_no_legal_moves' depends on axioms: [propext]
+'stalemate_not_checkmate' depends on axioms: [propext]
+'mate_no_legal_moves' depends on axioms: [propext]
+'mate_is_checkmate' depends on axioms: [propext]
+'stalemate_ne_checkmate' depends on axioms: [propext]
+'stalemate_vacuous_hypothesis' depends on axioms: [propext]

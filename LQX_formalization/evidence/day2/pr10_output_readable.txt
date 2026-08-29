@@ -1,0 +1,38 @@
+
+========== ① cross_check_real_mate：真将杀 ==========
+
+'cross_check_real_mate' depends on axioms: [propext]
+
+========== ② false_win_on_stalemate：逼和假定理 ==========
+
+Chess/Puzzles/Stalemate.lean:46:28: error: unsolved goals
+⊢ valid_moves
+          ╔════════════════╗
+          ║▓▓░░▓▓░░▓▓░░▓▓♚}║
+          ║░░▓▓░░▓▓░░♔]░░▓▓║
+          ║▓▓░░▓▓░░▓▓░░♕]░░║
+          ║░░▓▓░░▓▓░░▓▓░░▓▓║
+          ║▓▓░░▓▓░░▓▓░░▓▓░░║
+          ║░░▓▓░░▓▓░░▓▓░░▓▓║
+          ║▓▓░░▓▓░░▓▓░░▓▓░░║
+          ║░░▓▓░░▓▓░░▓▓░░▓▓║
+          ╚════════════════╝ ≠
+    ∅
+'false_win_on_stalemate' depends on axioms: [propext, sorryAx]
+
+========== ③ reachable_from_anchor：走 Qg6 后进入逼和 ==========
+
+Chess/Puzzles/Stalemate.lean:66:28: error: unsolved goals
+⊢ valid_moves
+          ╔════════════════╗
+          ║▓▓░░▓▓░░▓▓░░▓▓♚}║
+          ║░░▓▓░░▓▓░░♔]░░▓▓║
+          ║▓▓░░▓▓░░▓▓░░♕]░░║
+          ║░░▓▓░░▓▓░░▓▓░░▓▓║
+          ║▓▓░░▓▓░░▓▓░░▓▓░░║
+          ║░░▓▓░░▓▓░░▓▓░░▓▓║
+          ║▓▓░░▓▓░░▓▓░░▓▓░░║
+          ║░░▓▓░░▓▓░░▓▓░░▓▓║
+          ╚════════════════╝ ≠
+    ∅
+'reachable_from_anchor' depends on axioms: [propext, sorryAx]

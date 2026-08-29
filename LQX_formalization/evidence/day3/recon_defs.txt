@@ -1,0 +1,12 @@
+IsCheckmate : Position → Prop
+valid_moves : Position → List (ChessMove × Position)
+@[reducible] def IsCheckmate : Position → Prop :=
+fun pos => if king_is_in_check pos pos.turn = true then valid_moves pos = [] else False
+inductive ForcedWin : Side → Position → Prop
+number of parameters: 0
+constructors:
+ForcedWin.Checkmate : ∀ (p : Position), IsCheckmate p → ForcedWin p.turn.other p
+ForcedWin.Self : ∀ (p : Position) (m : ChessMove) (p1 : Position),
+  (m, p1) ∈ valid_moves p → ForcedWin p.turn p1 → ForcedWin p.turn p
+ForcedWin.Opponent : ∀ (p : Position),
+  (∀ (vm : ChessMove × Position), vm ∈ valid_moves p → ForcedWin p.turn.other vm.2) → ForcedWin p.turn.other p

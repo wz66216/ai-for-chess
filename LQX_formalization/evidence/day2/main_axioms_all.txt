@@ -1,0 +1,5 @@
+'cross_check_real_mate' depends on axioms: [propext]
+'false_win_on_stalemate' depends on axioms: [propext]
+'reachable_from_anchor' depends on axioms: [propext]
+'true_win_with_pawn' depends on axioms: [propext]
+'win_via_Re2' depends on axioms: [propext]
