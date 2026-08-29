@@ -1,0 +1,38 @@
+'cross_check_real_mate' depends on axioms: [propext]
+'false_win_on_stalemate' depends on axioms: [propext]
+'reachable_from_anchor' depends on axioms: [propext]
+Chess/Puzzles/Stalemate.lean:96:6: warning: '(simp; move "Qg7"; checkmate)' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+Chess/Puzzles/Stalemate.lean:97:6: warning: 'exact ne_of_beq_false rfl' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+Chess/Puzzles/Stalemate.lean:96:6: warning: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+Chess/Puzzles/Stalemate.lean:97:6: warning: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+'true_win_with_pawn' depends on axioms: [propext]
+Chess/Puzzles/Stalemate.lean:125:28: error: unsolved goals
+⊢ ForcedWin
+    Side.white
+        ╔════════════════╗
+        ║▓▓░░▓▓░░▓▓░░▓▓░░║
+        ║♟]▓▓░░▓▓░░▓▓░░▓▓║
+        ║♔}░░♘]░░▓▓░░▓▓░░║
+        ║░░▓▓░░▓▓♖]▓▓░░▓▓║
+        ║▓▓░░▓▓░░▓▓░░▓▓░░║
+        ║░░▓▓░░▓▓░░▓▓░░▓▓║
+        ║♚]♜]▓▓░░▓▓░░▓▓♕]║
+        ║░░▓▓░░▓▓░░▓▓░░▓▓║
+        ╚════════════════╝
+
+⊢ ForcedWin
+    Side.white
+        ╔════════════════╗
+        ║▓▓░░▓▓░░▓▓░░▓▓░░║
+        ║♟]▓▓░░▓▓░░▓▓░░▓▓║
+        ║♔}░░♘]░░▓▓░░▓▓░░║
+        ║░░▓▓░░▓▓♖]▓▓░░▓▓║
+        ║▓▓░░▓▓░░▓▓░░▓▓░░║
+        ║░░♜]░░▓▓░░▓▓░░▓▓║
+        ║▓▓░░▓▓░░▓▓░░▓▓♕]║
+        ║♚]▓▓░░▓▓░░▓▓░░▓▓║
+        ╚════════════════╝
