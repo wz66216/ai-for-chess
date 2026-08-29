@@ -1,8 +1,9 @@
-# ChessExplain
+# AI for Chess · ChessExplain
 
-ChessExplain is a chess analysis and whitebox search lab. It combines a
-Stockfish-backed analysis board with an interactive Search Lab for comparing
-Alpha-Beta and MCTS search behavior.
+ChessExplain is a full-stack chess analysis and white-box search lab with an
+interactive React/TypeScript interface and a FastAPI backend. It combines a
+Stockfish-backed analysis board with a Search Lab for comparing Alpha-Beta and
+MCTS search behavior.
 
 The active application is in `phase2_research/`.
 
